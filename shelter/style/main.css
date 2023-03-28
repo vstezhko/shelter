@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+:root {
+    --color-light-s: #FAFAFA;
+    --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
+    --color-dark-s: #CDCDCD;
+    --color-light-xl: #FFFFFF;
+    --color-dark-3xl: #292929;
+    --color-dark-l: #545454;
+    --color-dark-xl: #4C4C4C;
+    --color-dark-m: #B2B2B2;
+    --color-light-l: #F6F6F6;
+}
+
+.logo-title {
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+}
+
+.logo-subtitle {
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: var(--color-light-xl);
+}
+
+h2 {
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: var(--color-dark-l);
+}
+
+h3 {
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+h4 {
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+h5 {
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.paragraph-l {
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--color-dark-xl);
+}
+
+.paragraph-s {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--color-dark-m);
+}
+
+.pets-card-title {
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.donation-description {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color-dark-l);
+}
+
+.button-primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 45px;
+    justify-content: center;
+    gap: 10px;
+    background: var(--color-primary);
+    border-radius: 100px;
+    width: fit-content;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+    transition: all ease-in 0.3s;
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+    background: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+}
+
+.button-secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 45px;
+    gap: 10px;
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    width: fit-content;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+    transition: all ease-in 0.3s;
+}
+
+.button-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding: 17px 19px;*/
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all ease-in 0.3s;
+}
+
+.button-arrow:hover {
+    background: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+}
+
+.button-arrow:active,
+.button-arrow.active {
+    background: var(--color-primary);
+    border: none;
+}
+
+.button-arrow:disabled {
+    border: 2px solid var(--color-dark-s);
+    pointer-events: none;
+}
+
+.button-arrow:disabled * {
+    fill: 2px solid var(--color-dark-s);
+    color: var(--color-dark-s);
+}
+
+.wrapper {
+    padding: 0 40px;
+    width: 1280px;
+    margin: 0 auto;
+}

@@ -1,0 +1,149 @@
+
+header {
+    width: 100%;
+    background: var(--color-light-xl);
+    position: absolute;
+}
+
+header .wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-logo .logo-title,
+.header nav ul a.paragraph-l {
+    color: var(--color-dark-l);
+    transition: color ease-in 0.3s;
+    padding-bottom: 3px;
+}
+
+.header nav ul a:hover {
+    color: var(--color-dark-3xl);
+}
+
+.header nav ul a.paragraph-l:active {
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.header-logo .logo-subtitle,
+header nav ul li a.active.paragraph-l {
+    color: var(--color-dark-3xl);
+}
+
+header nav ul {
+    display: flex;
+    gap: 35px;
+}
+
+header nav ul a.active.paragraph-l {
+    color: var(--color-light-s);
+    border-bottom: 3px solid var(--color-primary);
+    padding-bottom: 3px;
+    pointer-events: none;
+}
+
+.our-friends {
+    background: var(--color-light-l);
+}
+
+.our-friends .wrapper {
+    padding: 200px 40px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 59px;
+    align-items: center;
+}
+
+.our-friends h3 {
+    text-align: center;
+}
+
+.our-friends .our-friends-slider-cards {
+    display: flex;
+    row-gap: 26px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.our-friends .card  {
+    background: var(--color-light-s);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+    transition: all ease-in 0.3s;
+}
+
+.our-friends .card:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background: #FFFFFF;
+}
+
+.our-friends .card img {
+    border-radius: 9px 9px 0 0;
+    width: 270px;
+    height: 270px;
+}
+
+.our-friends .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer {
+    background: url("../assets/noise_transparent@2x.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+footer .wrapper {
+    padding-top: 40px;
+    display: flex;
+    gap: 160px;
+    align-items: flex-start;
+}
+
+footer .footer-questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 234px;
+    margin-top: 16px;
+}
+
+footer .footer-questions.contacts {
+    width: 279px;
+}
+
+footer .footer-questions.address {
+    width: 302px;
+}
+
+footer .footer-questions h3 {
+    color: var(--color-light-xl);
+}
+
+footer .footer-questions h4 {
+    color: var(--color-primary);
+}
+
+footer .footer-questions .footer-contact {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
