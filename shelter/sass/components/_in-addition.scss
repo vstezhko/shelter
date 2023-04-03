@@ -1,0 +1,32 @@
+.in-addition {
+  background: $color-light-l;
+}
+
+.in-addition__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.in-addition__image {
+    max-height: 261px;
+    display: flex;
+    align-items: center;
+    margin-top: 11px;
+}
+
+.in-addition__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  max-width: 380px;
+
+  .button_primary {
+    padding: 10px 15px;
+    border-radius: 9px;
+    gap: 15px;
+  }
+}

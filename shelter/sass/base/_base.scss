@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: 'Arial', 'Verdana', sans-serif;
+  color: $color-dark-l;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Georgia', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+
+h2 {
+  font-family: 'Georgia', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.4rem;
+  line-height: 130%;
+  color: $color-dark-l;
+}
+
+h3 {
+  font-family: 'Georgia', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+}
+
+h4 {
+  font-family: 'Georgia', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+}
+
+h5 {
+  font-family: 'Georgia', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+}
+
+.paragraph_l {
+  font-family: 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+  //color: var(--color-dark-xl);
+}
+
+.paragraph-s {
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 150%;
+  color: $color-dark-m;
+}
+
+.pets-card-title {
+  font-family: 'Georgia', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+}
+
+.donation-description {
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: $color-dark-l;
+}
+

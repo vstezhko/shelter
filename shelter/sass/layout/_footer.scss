@@ -1,0 +1,40 @@
+.footer {
+  background: url("../assets/noise_transparent@2x.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer__wrapper {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    max-width: 300px;
+  }
+}
+
+.footer__contacts {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  padding-top: 16px;
+  width: min-content;
+
+  h3 {
+    color: $color-light-xl;
+  }
+}
+
+.footer__contact {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  color: $color-primary;
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    color: $color-light-s;
+  }
+}

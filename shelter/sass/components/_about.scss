@@ -1,0 +1,37 @@
+.about {
+  background: $color-light-xl;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.about__image {
+  max-width: 300px;
+  height: 100%;
+  display: flex;
+
+  img {
+    width: 100%;
+  }
+}
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 430px;
+  justify-content: center;
+
+  h3 {
+    color: $color-dark-l;
+  }
+
+  p {
+    color: $color-dark-xl;
+  }
+}

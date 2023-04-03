@@ -4,100 +4,102 @@
   <meta charset="UTF-8">
   <title>Shelter</title>
   <link rel="stylesheet" href="style/main.css">
-  <link rel="stylesheet" href="style/pets.css">
   <link rel="shortcut icon" href="assets/icon-collars-leashes.svg">
 </head>
 <body>
-<header class="header">
-  <div class="wrapper">
-    <div class="header-logo">
-      <a href="./index.html"><h1 class="logo-title">Cozy House</h1></a>
-      <p class="logo-subtitle">Shelter for pets in Boston</p>
+<header class="header header_colored">
+  <div class="wrapper header__wrapper">
+    <div class="logo">
+      <a href="./index.html"><h1 class="logo__title logo__title_dark">Cozy House</h1></a>
+      <p class="logo__subtitle_dark">Shelter for pets in Boston</p>
     </div>
-    <nav>
-      <ul>
-        <li><a href="./index.html" class="paragraph-l">About the shelter</a></li>
-        <li><a href="" class="active paragraph-l">Our pets</a></li>
-        <li><a href="./index.html#help" class="paragraph-l">Help the shelter</a></li>
-        <li><a href="#footer" class="paragraph-l">Contacts</a></li>
+    <nav class="header__navigation">
+      <ul class="navigation">
+        <li class="navigation__link_dark paragraph_l "><a href="./index.html">About the shelter</a></li>
+        <li class="navigation__link_dark-active paragraph_l "><a href="#">Our pets</a></li>
+        <li class="navigation__link_dark paragraph_l "><a href="./index.html#help">Help the shelter</a></li>
+        <li class="navigation__link_dark paragraph_l "><a href="#contacts">Contacts</a></li>
       </ul>
     </nav>
   </div>
 </header>
-<section class="our-friends">
-  <div class="wrapper">
+
+<section id="our-friends" class="our-friends our-friends_top-padding">
+  <div class="wrapper our-friends__wrapper">
     <h3>Our friends who <br> are looking for a house</h3>
-      <div class="our-friends-slider-cards">
-        <div class="card">
-          <img src="assets/pets-katrine.png" alt="pet-katrine">
-          <p class="pets-card-title">Katrine</p>
-          <a href="" class="button-secondary">Learn more</a>
-        </div>
-        <div class="card">
-          <img src="assets/pets-jennifer.png" alt="pet-jenifer">
-          <p class="pets-card-title">Jenifer</p>
-          <a href="" class="button-secondary">Learn more</a>
-        </div>
-        <div class="card">
-          <img src="assets/pets-woody.png" alt="pet-woody">
-          <p class="pets-card-title">Woody</p>
-          <a href="" class="button-secondary">Learn more</a>
-        </div>
-        <div class="card">
-          <img src="assets/pets-sofhia.png" alt="pet-sophia">
-          <p class="pets-card-title">Sophia</p>
-          <a href="" class="button-secondary">Learn more</a>
-        </div>
-        <div class="card">
-          <img src="assets/pets-timmy.png" alt="pet-timmy">
-          <p class="pets-card-title">Timmy</p>
-          <a href="" class="button-secondary">Learn more</a>
-        </div>
-        <div class="card">
-          <img src="assets/pets-charly.png" alt="pet-charly">
-          <p class="pets-card-title">Charly</p>
-          <a href="" class="button-secondary">Learn more</a>
-        </div>
-        <div class="card">
-          <img src="assets/pets-scarlet.png" alt="pet-scarlet">
-          <p class="pets-card-title">Scarlet</p>
-          <a href="" class="button-secondary">Learn more</a>
-        </div>
-        <div class="card">
-          <img src="assets/pets-fraddie.png" alt="pet-fraddie">
-          <p class="pets-card-title">Fraddie</p>
-          <a href="" class="button-secondary">Learn more</a>
-        </div>
+    <div class="our-friends__cards our-friends__cards_wrap">
+      <div class="card">
+        <img src="assets/pets-katrine.png" alt="pet-katrine">
+        <p class="pets-card-title">Katrine</p>
+        <a href="" class="button button_secondary">Learn more</a>
       </div>
+      <div class="card">
+        <img src="assets/pets-jennifer.png" alt="pet-jenifer">
+        <p class="pets-card-title">Jenifer</p>
+        <a href="" class="button button_secondary">Learn more</a>
+      </div>
+      <div class="card">
+        <img src="assets/pets-woody.png" alt="pet-woody">
+        <p class="pets-card-title">Woody</p>
+        <a href="" class="button button_secondary">Learn more</a>
+      </div>
+      <div class="card">
+        <img src="assets/pets-sofhia.png" alt="pet-sophia">
+        <p class="pets-card-title">Sophia</p>
+        <a href="" class="button button_secondary">Learn more</a>
+      </div>
+      <div class="card">
+        <img src="assets/pets-timmy.png" alt="pet-timmy">
+        <p class="pets-card-title">Timmy</p>
+        <a href="" class="button button_secondary">Learn more</a>
+      </div>
+      <div class="card">
+        <img src="assets/pets-charly.png" alt="pet-charly">
+        <p class="pets-card-title">Charly</p>
+        <a href="" class="button button_secondary">Learn more</a>
+      </div>
+      <div class="card">
+        <img src="assets/pets-scarlet.png" alt="pet-scarlet">
+        <p class="pets-card-title">Scarlet</p>
+        <a href="" class="button button_secondary">Learn more</a>
+      </div>
+      <div class="card">
+        <img src="assets/pets-fraddie.png" alt="pet-fraddie">
+        <p class="pets-card-title">Fraddie</p>
+        <a href="" class="button button_secondary">Learn more</a>
+      </div>
+    </div>
     <div class="pagination">
-      <button class="button-arrow" disabled>&lt;&lt;</button>
-      <button class="button-arrow" disabled>&lt;</button>
-      <button class="button-arrow active">1</button>
-      <button class="button-arrow">></button>
-      <button class="button-arrow">>></button>
+      <button class="button button_arrow" disabled>&lt;&lt;</button>
+      <button class="button button_arrow" disabled>&lt;</button>
+      <button class="button button_arrow-active">1</button>
+      <button class="button button_arrow">></button>
+      <button class="button button_arrow">>></button>
     </div>
   </div>
+  
 </section>
-<footer id="footer">
-  <div class="wrapper">
-    <div class="footer-questions contacts">
-      <h3>For questions and suggestions</h3>
-      <div class="footer-contact">
+
+<footer id="contacts" class="footer">
+  <div class="wrapper footer__wrapper">
+    <div class="footer__contacts ">
+      <h3>For questions and&nbsp;suggestions</h3>
+      <div class="footer__contact">
         <img src="assets/icon-email.svg" alt="email">
         <a href="mailto:email@shelter.com"><h4>email@shelter.com</h4></a>
       </div>
-      <div class="footer-contact">
+      <div class="footer__contact">
         <img src="assets/icon-phone.svg" alt="phone">
         <a href="tel:+136745677554"><h4>+13 674 567 75 54</h4></a>
       </div>
     </div>
-    <div class="footer-questions address">
-      <h3>We are waiting for your visit</h3>
-      <div class="footer-contact">
+    <div class="footer__contacts">
+      <h3>We&nbsp;are&nbsp;waiting for&nbsp;your&nbsp;visit</h3>
+      <div class="footer__contact">
         <img src="assets/icon-marker.png" alt="location marker">
-        <a href="https://www.google.com/maps?q=1+Central+Street,+Boston+(entrance+from+the+store)" target="_blank"><h4>1 Central Street, Boston (entrance from the store)</h4></a>
+        <a href="https://www.google.com/maps?q=1+Central+Street,+Boston+(entrance+from+the+store)" target="_blank"><h4>1&nbsp;Central&nbsp;Street,&nbsp;Boston (entrance&nbsp;from&nbsp;the&nbsp;store)</h4></a>
       </div>
-      <div class="footer-contact">
+      <div class="footer__contact">
         <img src="assets/icon-marker.png" alt="location marker">
         <a href="https://www.google.com/maps?q=18+South+Park,+London" target="_blank"><h4>18 South Park, London</h4></a>
       </div>
