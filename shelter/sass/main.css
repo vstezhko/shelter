@@ -23,75 +23,74 @@ a {
 
 h1 {
   font-family: "Georgia", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 3.2rem;
   line-height: 110%;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: 0.06em;
 }
 
 h2 {
   font-family: "Georgia", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 4.4rem;
   line-height: 130%;
+  font-weight: 400;
+  font-style: normal;
   color: #545454;
 }
 
 h3 {
   font-family: "Georgia", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 3.5rem;
   line-height: 130%;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: 0.06em;
   color: #545454;
 }
 
 h4 {
   font-family: "Georgia", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 2rem;
   line-height: 115%;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: 0.06em;
-  color: #545454;
 }
 
 h5 {
   font-family: "Georgia", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 1.5rem;
   line-height: 110%;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: 0.06em;
   color: #545454;
 }
 
 .paragraph_l {
   font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 1.5rem;
   line-height: 160%;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .paragraph-s {
   font-family: "Arial", sans-serif;
-  font-style: italic;
-  font-weight: 400;
   font-size: 1.2rem;
   line-height: 150%;
+  font-weight: 400;
+  font-style: italic;
   color: #B2B2B2;
 }
 
 .pets-card-title {
   font-family: "Georgia", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 2rem;
   line-height: 2.3rem;
+  font-weight: 400;
+  font-style: normal;
   display: flex;
   align-items: center;
   text-align: center;
@@ -99,12 +98,12 @@ h5 {
   color: #545454;
 }
 
-.donation-description {
+.donation_description {
   font-family: "Arial", sans-serif;
-  font-style: italic;
-  font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
   color: #545454;
 }
 
@@ -240,10 +239,10 @@ h5 {
 
 .logo__subtitle {
   font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: 0.1em;
 }
 .logo__subtitle_light {

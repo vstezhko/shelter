@@ -48,10 +48,7 @@
 
 .logo__subtitle {
   font-family: 'Arial', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 1.5rem;
+  @include font (1.3rem, 1.5rem, 400);
   letter-spacing: 0.1em;
 
   &_light {
