@@ -1,0 +1,105 @@
+.header {
+  position: absolute;
+  width: 100%;
+
+  &_transparent {
+    background: transparent;
+  }
+
+  &_colored {
+    background: $color-light-xl;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo__title {
+  transition: color ease-in 0.3s;
+
+  &_light {
+    color: $color-primary;
+
+    &:hover {
+      color: $color-light-xl;
+    }
+  }
+
+  &_dark {
+    color: $color-dark-l;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.logo__subtitle {
+  font-family: 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+
+  &_light {
+    color: $color-light-xl;
+  }
+
+  &_dark {
+    color: $color-dark-3xl
+  }
+}
+
+
+.navigation {
+  display: flex;
+  gap: 35px;
+}
+
+.navigation__link {
+  padding-bottom: 3px;
+  cursor: pointer;
+  transition: color ease-in 0.3s;
+
+  &_light {
+    color: $color-dark-s;
+  }
+
+  &_light:hover {
+    color: $color-light-s;
+  }
+
+  &_light-active {
+    color: $color-light-s;
+    border-bottom: 3px solid $color-primary;
+    pointer-events: none;
+  }
+
+  &_dark {
+    color: $color-dark-l;
+  }
+
+  &_dark:hover {
+    color: $color-dark-3xl;
+  }
+
+  &_dark-active {
+    color: $color-dark-l;
+    border-bottom: 3px solid $color-primary;
+    pointer-events: none;
+  }
+
+}
