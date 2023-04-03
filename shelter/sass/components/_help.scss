@@ -22,6 +22,10 @@
   justify-content: center;
   column-gap: 120px;
   row-gap: 55px;
+
+  @include media-tablet {
+    column-gap: 60px;
+  }
 }
 
 .help-item {
@@ -30,6 +34,11 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
+
+  @include media-tablet {
+    column-gap: 60px;
+    width: 170px;
+  }
 
 
   img {

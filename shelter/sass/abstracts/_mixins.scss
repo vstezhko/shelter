@@ -5,6 +5,18 @@
   font-style: $style;
 }
 
+@mixin media-tablet {
+  @media screen and (max-width: 1140px) {
+    @content
+  }
+}
+
+//@mixin media-mobile {
+//  @media screen and (max-width: 767px) {
+//    @content
+//  }
+//}
+
 
 
 

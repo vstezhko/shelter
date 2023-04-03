@@ -8,6 +8,12 @@
   gap: 12rem;
   padding-top: 8rem;
   padding-bottom: 10rem;
+
+  @include media-tablet {
+    flex-direction: column-reverse;
+    gap: 80px;
+    align-items: center;
+  }
 }
 
 .about__image {
@@ -33,5 +39,10 @@
 
   p {
     color: $color-dark-xl;
+  }
+
+  @include media-tablet {
+    max-width: 100%;
+    margin: 0 139px;
   }
 }

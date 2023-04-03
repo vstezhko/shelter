@@ -3,6 +3,13 @@
 
   &_top-padding {
     padding-top: 120px;
+
+    .our-friends__wrapper {
+      @include media-tablet {
+        gap: 30px;
+        padding-bottom: 76px;
+      }
+    }
   }
 }
 
@@ -26,16 +33,43 @@
   gap: 53px;
   align-items: center;
   width: 100%;
+
+  @include media-tablet {
+    gap: 12px;
+  }
 }
+
+$card-width: calc(260px + (100% - 260px*2)/4);
+
 
 .our-friends__cards {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  column-gap: calc((100% - 270px*3)/2);
+
+  @include media-tablet {
+      column-gap: calc((100% - $card-width*2));
+  }
+
 
   &_wrap {
     flex-wrap: wrap;
     row-gap: 30px;
+    column-gap: 40px;
+    justify-content: center;
+    max-height: 1365px;
+    overflow: hidden;
+
+    .card {
+      @include media-tablet {
+        width: 270px;
+        flex-shrink: 0;
+      }
+    }
+
   }
 }
 
@@ -58,10 +92,21 @@
       @extend %button_secondary_hover;
     }
   }
+
+  @include media-tablet {
+    width: $card-width;
+    min-width: 270px;
+    flex-shrink: 0;
+  }
 }
 
 .pagination {
   display: flex;
   justify-content: center;
   gap: 20px;
+
+  @include media-tablet {
+    margin-top: 10px;
+  }
+
 }
