@@ -922,10 +922,24 @@ h5 {
 }
 .footer__contacts h3 {
   color: #FFFFFF;
+  display: block;
 }
 @media screen and (max-width: 745px) {
   .footer__contacts h3 {
     text-align: center;
+  }
+}
+.footer__contacts h3.mobile-title {
+  display: none;
+}
+@media screen and (max-width: 745px) {
+  .footer__contacts h3.mobile-title {
+    display: block;
+  }
+}
+@media screen and (max-width: 745px) {
+  .footer__contacts h3:first-of-type {
+    display: none;
   }
 }
 

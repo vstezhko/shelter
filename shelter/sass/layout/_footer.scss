@@ -56,9 +56,24 @@
 
   h3 {
     color: $color-light-xl;
+    display: block;
 
     @include media-mobile {
       text-align: center;
+    }
+
+    &.mobile-title {
+      display: none;
+
+      @include media-mobile {
+        display: block;
+      }
+    }
+  }
+
+  @include media-mobile {
+    h3:first-of-type {
+      display: none;
     }
   }
 }
