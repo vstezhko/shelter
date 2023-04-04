@@ -66,6 +66,7 @@ h5 {
 
   @include media-mobile {
     @include font(1.4rem, 160%, 400);
+    letter-spacing: 0.04em;
   }
 }
 
