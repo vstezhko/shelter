@@ -5,11 +5,6 @@
 @import "base/base";
 @import "base/buttons";
 
-// Layouts
-@import "layout/wrapper";
-@import "layout/header";
-@import "layout/footer";
-
 // Components
 @import "components/not-only";
 @import "components/about";
@@ -17,3 +12,8 @@
 @import "components/help";
 @import "components/in-addition";
 @import "components/menu";
+
+// Layouts
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/footer";

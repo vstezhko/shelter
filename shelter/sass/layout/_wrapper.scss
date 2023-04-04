@@ -1,13 +1,16 @@
 .wrapper {
-  padding: 0 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   max-width: $content-width;
   margin: 0 auto;
 
   @include media-tablet {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @include media-mobile {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
