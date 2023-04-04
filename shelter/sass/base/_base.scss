@@ -32,6 +32,10 @@ h2 {
   font-family: 'Georgia', sans-serif;
   @include font(4.4rem, 130%, 400);
   color: $color-dark-l;
+
+  @include media-mobile {
+    @include font(2.5rem, 130%, 400);
+  }
 }
 
 h3 {
@@ -39,12 +43,18 @@ h3 {
   @include font(3.5rem, 130%, 400);
   letter-spacing: 0.06em;
   color: $color-dark-l;
+  @include media-mobile {
+    @include font(2.5rem, 130%, 400);
+  }
 }
 
 h4 {
   font-family: 'Georgia', sans-serif;
   @include font(2rem, 115%, 400);
   letter-spacing: 0.06em;
+  @include media-mobile {
+    @include font(1.5rem, 110%, 400);
+  }
   //color: $color-dark-l;
 }
 
@@ -53,6 +63,10 @@ h5 {
   @include font(1.5rem, 110%, 400);
   letter-spacing: 0.06em;
   color: $color-dark-l;
+
+  @include media-mobile {
+    @include font(1.4rem, 160%, 400);
+  }
 }
 
 .paragraph_l {

@@ -17,6 +17,11 @@
   align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
+
+  @include media-mobile {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .logo {
@@ -64,6 +69,10 @@
 .navigation {
   display: flex;
   gap: 35px;
+
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .navigation__link {
