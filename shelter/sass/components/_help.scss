@@ -14,6 +14,12 @@
   h3 {
     text-align: center;
   }
+
+  @include media-mobile {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    gap: 42px;
+  }
 }
 
 .help__items {
@@ -25,6 +31,13 @@
 
   @include media-tablet {
     column-gap: 60px;
+  }
+
+  @include media-mobile {
+    max-width: 300px;
+    margin: 0 auto;
+    gap: 30px;
+    justify-content: flex-start;
   }
 }
 
@@ -40,9 +53,23 @@
     width: 170px;
   }
 
+  @include media-mobile {
+    width: 130px;
+    row-gap: 20px;
+
+    h4 {
+      text-align: center;
+    }
+  }
+
 
   img {
     width: 60px;
     height: 60px;
+
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+    }
   }
 }

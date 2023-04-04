@@ -16,8 +16,17 @@
     padding-top: 30px;
   }
 
+  @include media-mobile {
+    padding-top: 30px;
+    gap: 40px;
+  }
+
   .footer__img {
     width: 300px;
+
+    @include media-mobile {
+      width: 260px;
+    }
   }
 }
 
@@ -37,8 +46,20 @@
     padding-bottom: 0;
   }
 
+  @include media-mobile {
+    gap: 40px;
+
+    h4 {
+      @include font(2rem, 115%, 400)
+    }
+  }
+
   h3 {
     color: $color-light-xl;
+
+    @include media-mobile {
+      text-align: center;
+    }
   }
 }
 
