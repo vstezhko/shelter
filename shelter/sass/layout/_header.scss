@@ -70,7 +70,10 @@
   display: flex;
   gap: 35px;
 
-  @include media-mobile {
+  //@include media-mobile {
+  //  display: none;
+  //}
+  @media  screen and (max-width: 767px) {
     display: none;
   }
 }

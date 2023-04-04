@@ -9,6 +9,11 @@
         gap: 30px;
         padding-bottom: 76px;
       }
+
+      @include media-mobile {
+        gap: 42px;
+        padding-bottom: 42px;
+      }
     }
   }
 }
@@ -84,6 +89,14 @@ $card-width: calc(260px + (100% - 260px*2)/4);
     max-height: 1365px;
     overflow: hidden;
 
+    @include media-tablet {
+      order: 0;
+    }
+
+    @include media-mobile {
+      order: 0;
+    }
+
     .card {
       @include media-tablet {
         width: 270px;
@@ -132,6 +145,11 @@ $card-width: calc(260px + (100% - 260px*2)/4);
 
   @include media-tablet {
     margin-top: 10px;
+  }
+
+  @include media-mobile {
+    gap: 10px;
+    margin-top: 0;
   }
 
 }

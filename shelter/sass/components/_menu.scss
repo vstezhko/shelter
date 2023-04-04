@@ -4,7 +4,6 @@
   content: '';
   width: 100%;
   height: 2px;
-  background: $color-primary;
 }
 
 
@@ -29,7 +28,23 @@
     top: calc( 50% - 1px );
   }
 
-  @include media-mobile {
-    display: block;
+  //@include media-mobile {
+  //  display: block;
+  //}
+  //
+  @media  screen and (max-width: 767px) {
+      display: block;
+  }
+
+  &_dark {
+    &:before,  &:after, .menu-line {
+      background: #000000;
+    }
+  }
+
+  &_light {
+    &:before,  &:after, .menu-line {
+      background: $color-primary;
+    }
   }
 }
