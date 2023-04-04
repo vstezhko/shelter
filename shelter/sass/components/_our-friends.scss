@@ -86,7 +86,7 @@ $card-width: calc(260px + (100% - 260px*2)/4);
     margin-right: 15px;
     width: calc( 100% - 20px);
     order: -1;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   &_wrap {
