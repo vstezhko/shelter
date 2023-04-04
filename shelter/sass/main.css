@@ -388,6 +388,14 @@ h5 {
 .our-friends_top-padding {
   padding-top: 120px;
 }
+.our-friends_top-padding .our-friends__cards {
+  max-height: 900px;
+}
+@media screen and (max-width: 951px) {
+  .our-friends_top-padding .our-friends__cards {
+    max-height: 1365px;
+  }
+}
 @media screen and (max-width: 1140px) {
   .our-friends_top-padding .our-friends__wrapper {
     gap: 30px;

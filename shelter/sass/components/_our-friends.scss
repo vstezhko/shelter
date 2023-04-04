@@ -4,6 +4,14 @@
   &_top-padding {
     padding-top: 120px;
 
+    .our-friends__cards {
+      max-height: 900px;
+
+      @media screen and (max-width: 951px) {
+        max-height: 1365px;
+      }
+    }
+
     .our-friends__wrapper {
       @include media-tablet {
         gap: 30px;
