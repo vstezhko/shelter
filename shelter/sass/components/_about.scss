@@ -58,10 +58,14 @@
 
   @include media-mobile {
     gap: 25px;
-    margin: 0 10px;
+    margin: 0 15px;
 
     h3 {
       text-align: center;
+    }
+
+    p {
+      text-align: justify;
     }
   }
 }

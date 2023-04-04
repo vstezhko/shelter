@@ -56,16 +56,20 @@
   }
 
   @include media-mobile {
-    padding: 0;
+    padding: 0 10px;
     align-items: center;
 
-    p, h5, h3 {
+    h5, h3{
       text-align: center;
+    }
+
+    p {
+      text-align: justify;
     }
   }
 
   .button_primary {
-    padding: 10px 15px;
+    padding: 10px 14px;
     border-radius: 9px;
     gap: 15px;
   }

@@ -375,10 +375,13 @@ h5 {
 @media screen and (max-width: 745px) {
   .about__info {
     gap: 25px;
-    margin: 0 10px;
+    margin: 0 15px;
   }
   .about__info h3 {
     text-align: center;
+  }
+  .about__info p {
+    text-align: justify;
   }
 }
 
@@ -684,15 +687,18 @@ h5 {
 }
 @media screen and (max-width: 745px) {
   .in-addition__info {
-    padding: 0;
+    padding: 0 10px;
     align-items: center;
   }
-  .in-addition__info p, .in-addition__info h5, .in-addition__info h3 {
+  .in-addition__info h5, .in-addition__info h3 {
     text-align: center;
+  }
+  .in-addition__info p {
+    text-align: justify;
   }
 }
 .in-addition__info .button_primary {
-  padding: 10px 15px;
+  padding: 10px 14px;
   border-radius: 9px;
   gap: 15px;
 }
