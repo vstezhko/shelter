@@ -473,7 +473,7 @@ h5 {
     margin-right: 15px;
     width: calc(100% - 20px);
     order: -1;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 }
 .our-friends__cards_wrap {
