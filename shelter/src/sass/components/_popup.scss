@@ -1,0 +1,47 @@
+.popup {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  gap: 9px;
+  background: $color-light-s;
+  border-radius: 9px;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  overflow: hidden;
+}
+
+.popup__image {
+  width: 500px;
+  height: 500px;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.popup__description {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.popup__title-block {
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+.popup__data-block {
+  li {
+    list-style: disc;
+    list-style-position: inside;
+
+    &::marker {
+      color: $color-primary;
+    }
+  }
+}
+

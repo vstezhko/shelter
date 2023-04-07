@@ -6,6 +6,9 @@
   top: 0;
   left:0;
   z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all ease-in 0.3s;
 
   &_active {
