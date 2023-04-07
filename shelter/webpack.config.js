@@ -7,7 +7,7 @@ const postcss = require("postcss");
 const mode = process.env.NODE_ENV || 'development';
 
 const devMode = mode === 'development'
-console.log(process.env.NODE_ENV, mode)
+// console.log(process.env.NODE_ENV, mode)
 const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
 
@@ -20,7 +20,6 @@ module.exports = {
         open: true,
         hot: true,
     },
-    // entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'index.js')],
     entry: [path.resolve(__dirname, 'src', 'index.js')],
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -48,22 +47,35 @@ module.exports = {
                 loader: 'html-loader',
             },
             {
-                // test: /\.s[ac]ss$/i,
                 test: /\.(c|sa|sc)ss$/i,
                 use: [
-                    // devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-                    MiniCssExtractPlugin.loader,
+                    devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
                     'css-loader',
                     {
                         loader: 'postcss-loader',
                         options: {
                             postcssOptions: {
                                 plugins: [require('postcss-preset-env')],
-                            }
-                        }
+                            },
+                        },
                     },
-                    'sass-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true,
+                        },
+                    },
                 ],
+            },
+            {
+                test: /\.m?js$/i,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env'],
+                    },
+                },
             },
             {
                 test: /\.(jpe?g|png|webp|gif|svg)$/i,
@@ -93,18 +105,6 @@ module.exports = {
                     }
                 ],
                 type: 'asset/resource',
-            },
-            {
-                test: /\.(?:js|mjs|cjs)$/i,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            ['@babel/preset-env', {targets: "defaults"}]
-                        ]
-                    }
-                }
             },
             {
                 test: /\.woff2?$/i,

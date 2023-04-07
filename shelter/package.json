@@ -33,6 +33,6 @@
     "webpack-dev-server": "^4.13.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "node-polyfill-webpack-plugin": "^2.0.1"
   }
 }

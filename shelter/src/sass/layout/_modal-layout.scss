@@ -1,0 +1,53 @@
+.modal-layout {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.6);
+  top: 0;
+  left:0;
+  z-index: -1;
+  transition: all ease-in 0.3s;
+
+  &_active {
+    z-index: 0;
+  }
+}
+
+.burger-menu {
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  padding: 30px 20px;
+  background: $color-dark-3xl;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  transition: all ease-in 0.3s;
+
+  .navigation {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    li {
+      width: fit-content;
+
+      &.navigation__link_light-active {
+        pointer-events: auto;
+      }
+
+      &.paragraph_l {
+        @include font(3.2rem, 160%, 400)
+      }
+    }
+  }
+
+  &_active {
+    right: 0;
+  }
+}
