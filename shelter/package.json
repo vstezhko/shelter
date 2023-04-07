@@ -4,9 +4,35 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "style": "sass --watch sass/main.scss style/main.css"
+    "start": "webpack serve",
+    "build-dev": "webpack --define-process-env-node-env development",
+    "build-prod": "webpack --define-process-env-node-env production",
+    "clear": "rd /s /q dist"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-webpack-loader": "^8.1.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.2.4",
+    "postcss-preset-env": "^8.3.0",
+    "sass": "^1.61.0",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "weback": "^0.0.1-security",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
 }
