@@ -17,7 +17,7 @@ export const Burger = () => {
     })
 
     modalLayout.addEventListener('click', (e)=>{
-        if (e.target === modalLayout) {
+        if (e.target === modalLayout && burgerMenu.classList.contains('burger-menu_active')) {
             toggleMenuHandle()
         }
     })
