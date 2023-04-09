@@ -5,10 +5,10 @@
     padding-top: 120px;
 
     .our-friends__cards {
-      max-height: 900px;
+      //max-height: 900px;
 
       @media screen and (max-width: 951px) {
-        max-height: 1365px;
+        //max-height: 1365px;
       }
     }
 
@@ -94,7 +94,7 @@ $card-width: calc(260px + (100% - 260px*2)/4);
     row-gap: 30px;
     column-gap: 40px;
     justify-content: center;
-    max-height: 1365px;
+    //max-height: 1365px;
     overflow: hidden;
 
     @include media-tablet {
@@ -124,6 +124,11 @@ $card-width: calc(260px + (100% - 260px*2)/4);
   gap: 3rem;
   padding-bottom: 30px;
   transition: all 0.3s ease-in;
+
+  img {
+    width: 270px;
+    height: 270px;
+  }
 
   &:hover {
     background: $color-light-xl;

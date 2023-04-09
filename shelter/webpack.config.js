@@ -2,6 +2,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const postcss = require("postcss");
 
 const mode = process.env.NODE_ENV || 'development';
@@ -24,21 +25,26 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        filename: '[name].[contenthash].js',
+        filename: 'index.js',
         assetModuleFilename: 'assets/[name][ext]'
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src', 'index.html'),
-            filename: 'index.html'
-        }),
-        new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'pets.html'),
             filename: 'pets.html'
         }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'index.html'),
+            filename: 'index.html'
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
-        })
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: "src/assets", to: "assets" },
+            ],
+        }),
     ],
     module: {
         rules: [
@@ -78,7 +84,7 @@ module.exports = {
                 },
             },
             {
-                test: /\.(jpe?g|png|webp|gif|svg)$/i,
+                test: /\.(jpe?g|png|webp|gif|svg|ico)$/i,
                 use: [
                     {
                         loader: 'image-webpack-loader',
@@ -86,7 +92,6 @@ module.exports = {
                             mozjpeg: {
                                 progressive: true,
                             },
-                            // optipng.enabled: false will disable optipng
                             optipng: {
                                 enabled: false,
                             },
@@ -97,7 +102,6 @@ module.exports = {
                             gifsicle: {
                                 interlaced: false,
                             },
-                            // the webp option will enable WEBP
                             webp: {
                                 quality: 75
                             }

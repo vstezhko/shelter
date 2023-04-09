@@ -56,9 +56,11 @@
     transform: rotate(180deg);
   }
 
-  &:hover {
-    background: $color-primary-light;
-    border-color: $color-primary-light;
+  @media (hover:hover) {
+    &:hover {
+      background: $color-primary-light;
+      border-color: $color-primary-light;
+    }
   }
 
   &:active{

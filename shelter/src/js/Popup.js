@@ -11,19 +11,15 @@ export const Popup = () => {
         popupWrapper.classList.toggle('popup-wrapper_active')
     }
 
-    closePopupBtn.addEventListener('click', () => {
-        toggleCardHandler()
-    })
+    closePopupBtn.onclick = toggleCardHandler
 
     cards.forEach(card => {
-        card.addEventListener('click', ()=>{
-            toggleCardHandler()
-        })
+        card.onclick = toggleCardHandler
     })
 
-    modalLayout.addEventListener('click', (e)=>{
+    modalLayout.onclick = (e) => {
         if (e.target === modalLayout) {
             toggleCardHandler()
         }
-    })
+    }
 }
