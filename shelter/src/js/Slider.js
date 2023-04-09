@@ -4,6 +4,10 @@ import {Popup} from "./Popup";
 
 export const Slider = () => {
 
+    if (document.querySelector('.our-friends__cards_wrap')) {
+        return
+    }
+
     const btnRight = document.querySelector(".button_arrow.right")
     const btnLeft = document.querySelector(".button_arrow.left")
 
@@ -12,7 +16,6 @@ export const Slider = () => {
     let petsArray = [0, 1, 2, 3, 4, 5, 6, 7]
 
     const defineCardsPerPage = () => {
-        console.log(cardsContainer.offsetWidth)
         if (cardsContainer.offsetWidth >=990) {
             return 3
         } else if (cardsContainer.offsetWidth >=550) {
@@ -47,7 +50,6 @@ export const Slider = () => {
 
 
     btnRight.addEventListener('click', ()=> {
-        console.log('click right')
         const newPets = generateBlock(petsArrayForRender, cardsPerPage)
         petsArrayForRender = newPets
         renderCards(newPets, 'right')
@@ -73,7 +75,6 @@ export const Slider = () => {
 
     })
     btnLeft.addEventListener('click', ()=> {
-        console.log('click left')
         const newPets = generateBlock(petsArrayForRender, cardsPerPage)
         petsArrayForRender = newPets
         renderCards(newPets, 'left')
@@ -115,13 +116,11 @@ export const Slider = () => {
 
         const block = document.createElement('div')
         block.classList.add('slider-block')
-        console.log(cardsContainer.offsetWidth)
         block.style.gap = `${(cardsContainer.offsetWidth-270*cardsPerPage)/(cardsPerPage-1 !== 0 ? cardsPerPage-1 : 1)}px`
         block.style.width = `${cardsContainer.offsetWidth}px`
         block.classList.add(`${side}`)
         showedPets.forEach(pet => {
             const petCard = document.createElement('div')
-            console.log(pet)
             petCard.id = pets[pet].name
             petCard.classList.add('card')
             petCard.innerHTML = `
@@ -139,7 +138,6 @@ export const Slider = () => {
 
 
     window.addEventListener('resize', function() {
-
         const sliders = document.querySelectorAll('.slider-block')
         sliders.forEach(slider => {
             slider.style.gap = `${(cardsContainer.offsetWidth-270*cardsPerPage)/(cardsPerPage-1 !== 0 ? cardsPerPage-1 : 1)}px`

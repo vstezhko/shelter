@@ -71,7 +71,6 @@ export const Pagination = () => {
     }
 
     pagination.addEventListener('click', (e)=>{
-        console.log((e.target.id), paginatedPets.length)
             switch (e.target.id) {
                 case '': break
 
@@ -141,7 +140,6 @@ export const Pagination = () => {
     }
 
     function generateCards () {
-        console.log("2222", cardsOnPage)
         paginatedPets = getRandomPets()
     }
 
@@ -153,14 +151,11 @@ export const Pagination = () => {
 
     window.addEventListener('resize', function() {
         getCardsOnPageCount()
-        console.log('!!!!!!!!!', cardsOnPage)
-
     });
 
 
     function renderCards (showedPets) {
         cardsWrap.innerHTML = ''
-        console.log(showedPets)
         showedPets.forEach(pet => {
             const card = document.createElement('div')
             card.id = pets[pet].name
