@@ -24,6 +24,29 @@ export const Pagination = () => {
     let petsNames = [0, 1, 2, 3, 4, 5, 6, 7]
     let paginatedPets = []
 
+    function generateRandomPets() {
+        let randomSet = new Set();
+        const min = 0;
+        const max = petsNames.length;
+        for (let i = 0; randomSet.size < pets.length; i++) {
+            let randomNum = Math.floor(Math.random() * (max - min)) + min
+            randomSet.add(randomNum)
+        }
+
+        return [...randomSet]
+    }
+
+    function getRandomPets() {
+        let arr = []
+        for (let i = 0; i < 6; i++) {
+            let randomArr = generateRandomPets()
+            arr.push(...randomArr)
+        }
+        return arr
+    }
+
+
+
     let currentPage = 1
     activePageBtn.innerHTML = `${currentPage}`
 
@@ -119,14 +142,7 @@ export const Pagination = () => {
 
     function generateCards () {
         console.log("2222", cardsOnPage)
-        paginatedPets = []
-        while   (paginatedPets.length < 48) {
-            let page = []
-            while (page.length < cardsOnPage) {
-                page.push(petsNames[Math.floor(Math.random() * petsNames.length)])
-            }
-            paginatedPets.push(...page);
-        }
+        paginatedPets = getRandomPets()
     }
 
 
