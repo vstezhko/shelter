@@ -126,7 +126,7 @@ export const Slider = () => {
             petCard.innerHTML = `
                 <img src=${pets[pet].img} alt=${pets[pet].name}>
                 <p class="pets-card-title">${pets[pet].name}</p>
-                <a href="" class="button button_secondary">Learn more</a>
+                <div class="button button_secondary">Learn more</div>
             `
             block.appendChild(petCard)
         })
