@@ -66,19 +66,123 @@
   }
 }
 
-$card-width: calc(260px + (100% - 260px*2)/4);
+$card-width: 270px;
 
 
 .our-friends__cards {
   display: flex;
-  justify-content: space-between;
   width: 100%;
-  flex-wrap: nowrap;
   overflow: hidden;
-  column-gap: calc((100% - 270px*3)/2);
+  position: relative;
+  height: 435px;
+  flex-wrap: nowrap;
+  //column-gap: 20px;
+
+  //.cards-container-wrapper {
+  //  position: absolute;
+  //  //height: 100%;
+  //  min-width: 100%;
+  //  left: 0;
+  //  flex-wrap: nowrap;
+  //  display: flex;
+  //  transition: all 0.5s;
+  //}
+
+  .slider-block {
+    position: absolute;
+    display: flex;
+    right: 0;
+    left: 0;
+
+    &.animation_rightToCenter {
+      animation-duration: 0.5s;
+      animation-name: slideRightToCenter;
+    }
+
+    &.animation_centerToLeft {
+      animation-duration: 0.5s;
+      animation-name: slideCenterToLeft;
+    }
+
+
+    &.animation_leftToCenter {
+      animation-duration: 0.5s;
+      animation-name: slideLeftToCenter;
+    }
+
+    &.animation_centerToRight {
+      animation-duration: 0.5s;
+      animation-name: slideCenterToRight;
+    }
+
+    &.right {
+      right: -100%;
+      left: initial;
+    }
+
+    &.left {
+      left: -100%;
+      right: initial;
+    }
+
+    &.center {
+      right: initial;
+      left: initial;
+    }
+
+  }
+
+  @keyframes slideRightToCenter {
+    from {
+      right: -100%;
+      left: initial;
+    }
+
+    to {
+      right: 0;
+      left: initial;
+    }
+  }
+
+  @keyframes slideCenterToLeft {
+    from {
+      left:0;
+      right: initial;
+    }
+
+    to {
+      left: -100%;
+      right: initial;
+    }
+  }
+
+  @keyframes slideLeftToCenter {
+    from {
+      left: -100%;
+      right: initial;
+    }
+
+    to {
+      left: 0;
+      right: initial;
+    }
+  }
+
+  @keyframes slideCenterToRight {
+    from {
+      right:0;
+      left: initial;
+    }
+
+    to {
+      right: -100%;
+      left: initial;
+    }
+  }
+
 
   @include media-tablet {
-      column-gap: calc((100% - $card-width*2));
+      //column-gap: calc((100% - $card-width*2));
   }
 
   @include media-mobile {
