@@ -24,12 +24,32 @@ export const Popup = () => {
     }
 
     const toggleCardHandler = (e) => {
-        if (e.target.id || e.target.parentNode.id) {
-            fillCard(e.target.id || e.target.parentNode.id)
+        // if (!document.querySelector('.burger-menu_active')) {
+        //     console.log('нет')
+        //     return
+        // }
+
+
+        if (document.querySelector('.burger-menu_active')) {
+            console.log('!!!!!!!!!!!!1')
+            return
         }
-        body.classList.toggle('lock')
-        modalLayout.classList.toggle('modal-layout_active')
-        popupWrapper.classList.toggle('popup-wrapper_active')
+
+        if (document.querySelector('.popup-wrapper_active')) {
+            body.classList.toggle('lock')
+            modalLayout.classList.toggle('modal-layout_active')
+            popupWrapper.classList.toggle('popup-wrapper_active')
+            return
+        }
+
+        if (!document.querySelector('.popup-wrapper_active')) {
+            if (e.target.id || e.target.parentNode.id) {
+                fillCard(e.target.id || e.target.parentNode.id)
+            }
+            body.classList.toggle('lock')
+            modalLayout.classList.toggle('modal-layout_active')
+            popupWrapper.classList.toggle('popup-wrapper_active')
+        }
     }
 
     closePopupBtn.onclick = toggleCardHandler

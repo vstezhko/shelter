@@ -7,8 +7,8 @@ import {Slider} from "./js/Slider";
 
 
 window.onload = function(){
-    Burger()
     Popup()
+    Burger()
     Pagination()
     Slider()
 }
