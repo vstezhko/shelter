@@ -200,6 +200,7 @@ $card-width: 270px;
     justify-content: center;
     //max-height: 1365px;
     overflow: hidden;
+    height: inherit;
 
     @include media-tablet {
       order: 0;
